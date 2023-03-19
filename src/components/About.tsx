@@ -37,51 +37,42 @@ const MY_INFO = [
     title: "삼성 청년 소프트웨어 아카데미(SSAFY) 4기 수료",
     icon: <FcReading size="30" />,
   },
+  {
+    title: "Skills",
+    icon: <FcIdea size="30" />,
+  },
 ];
 
 const About = () => {
   return (
     <div className="py-16" id="about">
-      <div className="grid grid-cols-12">
+      <div className="grid grid-cols-12 gap-x-6">
         <div className="col-start-3 col-span-4">
           <Fade cascade>
-            <p className="text-5xl font-semibold">About Me</p>
+            <p className="text-5xl font-semibold text-start mb-12">About Me</p>
           </Fade>
-          <div className="grid grid-cols-2">
-            <div className="detail-short">
-              <FcBusinesswoman size="30" />{" "}
-              <p style={{ paddingBottom: "3px" }}>최진영</p>
-            </div>
-            <div className="detail-short">
-              <FcCalendar size="30" /> <p>95.09.07</p>
-            </div>
-            <div className="detail">
-              <FcPhone size="30" />{" "}
-              <p style={{ paddingBottom: "3px" }}>010-9157-9766</p>
-            </div>
-            <div className="detail">
-              <FcFeedback size="30" /> <p>gnyonge@gmail.com</p>
-            </div>
+          <div className="grid grid-cols-2 gap-y-4">
+            {MY_INFO.slice(0, 4).map(({ title, icon }) => (
+              <div className="flex gap-x-2 items-center">
+                {icon}
+                <p>{title}</p>
+              </div>
+            ))}
           </div>
-          <div className="about-details-block">
-            <div className="detail">
-              <FcGraduationCap size="30" />{" "}
-              <p>중국 渤海大学(발해대학) 금융학과 졸업</p>
-            </div>
-            <div className="detail">
-              <FcReading size="30" />{" "}
-              <p>삼성 청년 소프트웨어 아카데미(SSAFY) 4기 수료</p>
-            </div>
-            <div className="detail">
-              <FcIdea size="30" /> <p>Skills</p>
-            </div>
-            <div className="detail">
-              <img src={SkillsImage} alt="skills" style={{ width: "90%" }} />
+          <div className="grid gap-y-4 mt-4">
+            {MY_INFO.slice(4, 7).map(({ title, icon }) => (
+              <div className="flex gap-x-2 items-center">
+                {icon}
+                <p>{title}</p>
+              </div>
+            ))}
+            <div>
+              <img src={SkillsImage} alt="skills" className="w-full" />
             </div>
           </div>
         </div>
-        <div className="image-wrapper col-span-4">
-          <img src={AboutImage} alt="about"></img>
+        <div className="col-span-4">
+          <img src={AboutImage} alt="about" />
         </div>
       </div>
     </div>

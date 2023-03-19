@@ -17,10 +17,10 @@ const Intro = () => {
             <p>Frontend Developer</p>
             <p>최진영's Portfolio</p>
           </div>
-          <div className="text-sm font-medium grid gap-y-1">
+          <div className="text-md font-medium grid gap-y-1">
             <p>안녕하세요.</p>
             <p>배우는 것을 좋아하는 프론트엔드 개발자입니다!</p>
-            <p>1px도 놓치지 않으려는 꼼꼼함이 특징입니다!</p>
+            <p>잘 부탁드립니다~!</p>
           </div>
           <a href="#about">
             <button className="p-3 mt-8 bg-black text-white transition-all ease-in-out cursor-pointer w-32 rounded-md hover:bg-slate-700 active:bg-slate-800">
