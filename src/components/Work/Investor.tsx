@@ -1,38 +1,38 @@
 import Slider from "react-slick";
 import "../../styles/slick.css";
 import "../../styles/slick-theme.css";
-import Poke1 from "../../images/1.png";
-import Poke2 from "../../images/2.png";
-import Poke3 from "../../images/3.png";
-import Poke4 from "../../images/5.png";
+import Investor1 from "../../images/investor1.png";
+import Investor2 from "../../images/investor2.png";
+import Investor3 from "../../images/investor3.png";
+import Investor4 from "../../images/investor4.png";
+import Investor5 from "../../images/investor5.png";
 import { SETTINGS } from ".";
 import { FcCheckmark } from "react-icons/fc";
 
-const Pokemon = () => {
-  const pokeImages = [Poke1, Poke2, Poke3, Poke4];
-  const pokeDesc = [
+const Investor = () => {
+  const InvestorImages = [
+    Investor1,
+    Investor2,
+    Investor3,
+    Investor4,
+    Investor5,
+  ];
+  const InvestorDesc = [
     {
       title: "Deployment",
-      content: "GitHub pages",
-      url: "https://gnyonge.github.io/Pokemon-project/",
-    },
-    {
-      title: "GitHub",
-      content: "",
-      url: "https://github.com/gnyonge/Pokemon-project",
+      content: "Coinvestor",
+      url: "https://www.coinvestor.co/",
     },
   ];
 
   return (
     <div className="flex flex-col items-center bg-white shadow-lg rounded-3xl p-8">
-      <p className="text-4xl font-semibold">포켓몬 사전</p>
-      <p className="text-gray-400 font-medium mt-6 mb-12">
-        2021.10.21 ~ 2021.10.30 (1人 개인 프로젝트)
-      </p>
+      <p className="text-4xl font-semibold">Coinvestor Main Product</p>
+      <p className="text-gray-400 font-medium mt-6 mb-12">2022.11.01 ~ 현재</p>
       <div className="grid place-items-center">
         <div className="poke-carousel">
           <Slider {...SETTINGS}>
-            {pokeImages.map((image, index) => (
+            {InvestorImages.map((image, index) => (
               <div key={index}>
                 <img src={image} alt={`${image}`} />
               </div>
@@ -41,14 +41,41 @@ const Pokemon = () => {
         </div>
         <div className="text-start mt-12">
           <p>
-            포켓몬들의 세부 정보를 확인하고 자유롭게 포켓몬을 잡을 수 있는{" "}
-            <span className="font-semibold">첫 리액트 프로젝트</span>입니다.
-            잡은 포켓몬들은 나의 가방에서 확인이 가능합니다.
+            비씨랩스의 <span className="font-semibold">메인 프로덕트</span>이자
+            이번에 리뉴얼 후 런칭한{" "}
+            <span className="font-semibold">Coinvestor</span>입니다!
             <br />
             <br />
-            많은 기능이 있는 프로젝트는 아니지만 Vue.js로만 프론트엔드 개발을
-            했었기 때문에 리액트를 처음 접하면서 적응하는데에 시간이 조금
-            걸렸습니다.
+            간단히 Coinvestor에 대해 말씀드리자면,{" "}
+            <span className="font-semibold">가상 자산 간접 투자 플랫폼</span>
+            입니다.
+            <br />
+            가상 자산에 직접 투자를 하기에 부담스러운 일반 투자자들이{" "}
+            <span className="font-semibold">가상 자산 운용 전문가들</span>이
+            만든 상품에 투자를 하면 전문가들이 투자금을 상품내에서 운용을 하고,
+            그 결과로 나온 금액을 나눠가질 수 있도록 해주는 중개 플랫폼입니다.
+            <br />
+            <br />
+            Coinvestor에는 총 네개의 사이트가 있습니다.
+            <br />위 프로젝트는 네개의 사이트 중에서 일반 투자자들이 가상 자산
+            운용 전문가들이 만든 상품들을{" "}
+            <span className="font-semibold">구매(투자), 판매(투자 취소)</span>할
+            수 있는 메인 사이트입니다.
+            <br />
+            <br />
+            <span className="font-semibold">
+              주로 아래 세 페이지를 개발하였습니다.
+            </span>
+            <br />
+            1. Coinvestor의 메인 페이지라고 할 수 있는 Landing
+            <br />
+            2. 유저가 가지고 있는 가상 자산을 볼 수 있고, 입출금이 가능한 My
+            wallet
+            <br />
+            3. 유저의 정보를 확인, 수정할 수 있고 인증을 통해 level up을 하고
+            Trader 신청을 할 수 있는 My account
+            <br />
+            <br />
             <br />
             예를 들면, useState라는 hook을 쓸 때{" "}
             <span className="font-semibold">
@@ -84,9 +111,11 @@ const Pokemon = () => {
               <FcCheckmark size="30" />
               <p>Front-end</p>
             </div>
-            <div className="col-span-3 flex items-center">React, Redux</div>
+            <div className="col-span-3 flex items-center">
+              React, Recoil, Next.js, TailwindCSS
+            </div>
           </div>
-          {pokeDesc.map((desc, index) => (
+          {InvestorDesc.map((desc, index) => (
             <div className="grid grid-cols-4" key={index}>
               <div className="col-span-1 flex items-center font-semibold gap-x-2">
                 <FcCheckmark size="30" />
@@ -105,4 +134,4 @@ const Pokemon = () => {
   );
 };
 
-export default Pokemon;
+export default Investor;

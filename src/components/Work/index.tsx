@@ -1,6 +1,9 @@
 import { Fade } from "react-awesome-reveal";
+import Admin from "./Admin";
 import Hunsu from "./Hunsu";
+import Investor from "./Investor";
 import Pokemon from "./Pokemon";
+import Terminal from "./Terminal";
 import WalkieDoggie from "./WalkieDoggie";
 
 export const SETTINGS = {
@@ -19,6 +22,9 @@ const Work = () => {
       </Fade>
       <div className="grid grid-cols-12 gap-x-6">
         <div className="col-start-3 col-span-8 grid gap-y-24">
+          <Investor />
+          <Admin />
+          <Terminal />
           <Pokemon />
           <WalkieDoggie />
           <Hunsu />

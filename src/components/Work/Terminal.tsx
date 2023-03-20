@@ -1,38 +1,37 @@
 import Slider from "react-slick";
 import "../../styles/slick.css";
 import "../../styles/slick-theme.css";
-import Poke1 from "../../images/1.png";
-import Poke2 from "../../images/2.png";
-import Poke3 from "../../images/3.png";
-import Poke4 from "../../images/5.png";
+import Terminal1 from "../../images/terminal1.png";
+import Terminal2 from "../../images/terminal2.png";
+import Terminal3 from "../../images/terminal3.png";
 import { SETTINGS } from ".";
 import { FcCheckmark } from "react-icons/fc";
 
-const Pokemon = () => {
-  const pokeImages = [Poke1, Poke2, Poke3, Poke4];
-  const pokeDesc = [
-    {
-      title: "Deployment",
-      content: "GitHub pages",
-      url: "https://gnyonge.github.io/Pokemon-project/",
-    },
-    {
-      title: "GitHub",
-      content: "",
-      url: "https://github.com/gnyonge/Pokemon-project",
-    },
-  ];
+const Terminal = () => {
+  const TerminalImages = [Terminal1, Terminal2, Terminal3];
+  // const TerminalDesc = [
+  //   {
+  //     title: "Deployment",
+  //     content: "GitHub pages",
+  //     url: "https://gnyonge.github.io/Pokemon-project/",
+  //   },
+  //   {
+  //     title: "GitHub",
+  //     content: "",
+  //     url: "https://github.com/gnyonge/Pokemon-project",
+  //   },
+  // ];
 
   return (
     <div className="flex flex-col items-center bg-white shadow-lg rounded-3xl p-8">
-      <p className="text-4xl font-semibold">포켓몬 사전</p>
+      <p className="text-4xl font-semibold">Coinvestor Trading Terminal</p>
       <p className="text-gray-400 font-medium mt-6 mb-12">
-        2021.10.21 ~ 2021.10.30 (1人 개인 프로젝트)
+        2022.02.23 ~ 2022.05.31
       </p>
       <div className="grid place-items-center">
         <div className="poke-carousel">
           <Slider {...SETTINGS}>
-            {pokeImages.map((image, index) => (
+            {TerminalImages.map((image, index) => (
               <div key={index}>
                 <img src={image} alt={`${image}`} />
               </div>
@@ -84,25 +83,27 @@ const Pokemon = () => {
               <FcCheckmark size="30" />
               <p>Front-end</p>
             </div>
-            <div className="col-span-3 flex items-center">React, Redux</div>
+            <div className="col-span-3 flex items-center">
+              React, Redux, Redux Saga
+            </div>
           </div>
-          {pokeDesc.map((desc, index) => (
+          {/* {TerminalDesc.map((desc, index) => (
             <div className="grid grid-cols-4" key={index}>
               <div className="col-span-1 flex items-center font-semibold gap-x-2">
                 <FcCheckmark size="30" />
                 <p>{desc.title}</p>
               </div>
               <div className="col-span-3 underline hover:text-gray-500 flex items-center">
-                <a href={desc.url} target="_blank" rel="noreferrer">
+                <a href={desc.url} target="_blank">
                   {desc.content} 바로가기
                 </a>
               </div>
             </div>
-          ))}
+          ))} */}
         </div>
       </div>
     </div>
   );
 };
 
-export default Pokemon;
+export default Terminal;

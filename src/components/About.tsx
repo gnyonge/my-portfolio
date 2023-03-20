@@ -10,6 +10,7 @@ import {
   FcGraduationCap,
   FcReading,
   FcIdea,
+  FcDepartment,
 } from "react-icons/fc";
 
 const MY_INFO = [
@@ -38,6 +39,10 @@ const MY_INFO = [
     icon: <FcReading size="30" />,
   },
   {
+    title: "2022.02.23 ~ 현재 비씨랩스에서 프론트엔드 개발자로 근무중",
+    icon: <FcDepartment size="30" />,
+  },
+  {
     title: "Skills",
     icon: <FcIdea size="30" />,
   },
@@ -60,7 +65,7 @@ const About = () => {
             ))}
           </div>
           <div className="grid gap-y-4 mt-4">
-            {MY_INFO.slice(4, 7).map(({ title, icon }) => (
+            {MY_INFO.slice(4, 8).map(({ title, icon }) => (
               <div className="flex gap-x-2 items-center">
                 {icon}
                 <p>{title}</p>

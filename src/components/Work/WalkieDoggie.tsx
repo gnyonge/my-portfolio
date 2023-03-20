@@ -44,37 +44,44 @@ const WalkieDoggie = () => {
           </Slider>
         </div>
         <div className="text-start mt-12">
-          <strong>반려견과 견주를 위한 위치기반 종합 서비스</strong>
-          입니다. <br />
-          <br />
-          주요 기능은{" "}
-          <strong>
-            반려견 일기 및 산책기록 확인, 실시간 산책경로 확인 및 현재 위치를
-            기반으로한 SNS기능, OCR을 이용한 사료, 간식 성분분석
-          </strong>
-          이 있습니다. <br />
-          <br />
-          프로젝트 도중, 오류가 많아서 개발 진행에 어려움이 있었습니다. 하지만{" "}
-          <strong>비동기처리를 적용하고 해결</strong>해보면서 자바스크립트에
-          대한 개념을 더욱 확실하게 익힐 수 있었고 어려움을 극복하면서 개발에 더
-          재미를 느꼈습니다. <br />
-          <br />
-          <strong>사용자를 위한 UI/UX 개선</strong>을 위해 전체적인 디자인도
-          중간에 새롭게 수정을 하였습니다. 시간이 부족해 고민도 하였지만
-          사용자의 입장에서 보았을 때 훨씬 나은 결과물을 내었습니다. <br />
-          <br />
-          <strong>
-            라우팅을 하면서 탭이 같이 이동하지 않는 문제, 지도에 핀이 찍히지
-            않는 문제
-          </strong>
-          와 같이 개발 도중에 잘 해결되지 않는 문제들을 서로 도와주고 해결해
-          나가면서 팀워크도 더 좋아지고
-          <strong>스스로 성장을 굉장히 많이 했던 프로젝트</strong>
-          입니다.
-          <br />
-          <br />
-          <hr />
-          <br />
+          <p>
+            <span className="font-semibold">
+              반려견과 견주를 위한 위치기반 종합 서비스
+            </span>
+            입니다. <br />
+            <br />
+            주요 기능은{" "}
+            <span className="font-semibold">
+              반려견 일기 및 산책기록 확인, 실시간 산책경로 확인 및 현재 위치를
+              기반으로한 SNS기능, OCR을 이용한 사료, 간식 성분분석
+            </span>
+            이 있습니다. <br />
+            <br />
+            프로젝트 도중, 오류가 많아서 개발 진행에 어려움이 있었습니다. 하지만{" "}
+            <span className="font-semibold">비동기처리를 적용하고 해결</span>
+            해보면서 자바스크립트에 대한 개념을 더욱 확실하게 익힐 수 있었고
+            어려움을 극복하면서 개발에 더 재미를 느꼈습니다. <br />
+            <br />
+            <span className="font-semibold">사용자를 위한 UI/UX 개선</span>을
+            위해 전체적인 디자인도 중간에 새롭게 수정을 하였습니다. 시간이
+            부족해 고민도 하였지만 사용자의 입장에서 보았을 때 훨씬 나은
+            결과물을 내었습니다. <br />
+            <br />
+            <span className="font-semibold">
+              라우팅을 하면서 탭이 같이 이동하지 않는 문제, 지도에 핀이 찍히지
+              않는 문제
+            </span>
+            와 같이 개발 도중에 잘 해결되지 않는 문제들을 서로 도와주고 해결해
+            나가면서 팀워크도 더 좋아지고{" "}
+            <span className="font-semibold">
+              스스로 성장을 굉장히 많이 했던 프로젝트
+            </span>
+            입니다.
+            <br />
+            <br />
+            <hr />
+            <br />
+          </p>
           {walkDesc.map((desc, index) => (
             <div className="grid grid-cols-4" key={index}>
               <div className="col-span-1 flex items-center font-semibold gap-x-2">
@@ -90,7 +97,13 @@ const WalkieDoggie = () => {
               <p>GitHub</p>
             </div>
             <div className="col-span-3 underline hover:text-gray-500 flex items-center">
-              <a href="https://github.com/gnyonge/Walkie-Doggie">바로가기</a>
+              <a
+                href="https://github.com/gnyonge/Walkie-Doggie"
+                target="_blank"
+                rel="noreferrer"
+              >
+                바로가기
+              </a>
             </div>
           </div>
         </div>

@@ -44,32 +44,37 @@ const Hunsu = () => {
           </Slider>
         </div>
         <div className="text-start h-full">
-          <strong>
-            '패션' 이라는 주제로 소통의 장을 열 수 있는 패션 커뮤니티 사이트
-          </strong>
-          입니다. <br />
-          <br />
-          주요 기능은 <strong>실시간</strong> 채팅방에서 소통하며 패션 '훈수'를
-          주고 받을 수 있는 서비스와 오늘 나의 패션을 자랑하는{" "}
-          <strong>#OOTD</strong> (Outfit Of The Day) , 그리고 패션에 대한 고민을
-          해결해줄 투표기능이 있는 <strong>뭘 입을까?</strong> 가 있습니다.
-          <br />
-          <br />
-          여러 커뮤니티와 쇼핑몰 어플들을 이용하면서 옷에 대한 센스가 부족한
-          사람들은 어디서 도움을 받을 수 있을까 생각하다가 만들게 된 'Hunsu'
-          입니다. <br /> <br />
-          초반 백엔드와 소통의 어려움을 Figma와 구글시트를 사용해 UI/UX 및 API
-          명세를 문서화하여 해결하였습니다. 이를 통해 문서화의 중요성과{" "}
-          <strong>백엔드 개발자와 협업하는 방법</strong>도 배울 수 있었습니다.
-          <br />
-          <br />
-          뿐만 아니라, Vuex를 사용할 때 반복되는 코드를 줄이기 위해 파일을 따로
-          생성해서 Import하여 사용하는 등 혼자 공부했을 때는 몰랐던 여러가지
-          코드 작성법들을 배울 수 있었습니다.
-          <br />
-          <br />
-          <hr />
-          <br />
+          <p>
+            <span className="font-semibold">
+              '패션' 이라는 주제로 소통의 장을 열 수 있는 패션 커뮤니티 사이트
+            </span>
+            입니다. <br />
+            <br />
+            주요 기능은 <span className="font-semibold">실시간</span> 채팅방에서
+            소통하며 패션 '훈수'를 주고 받을 수 있는 서비스와 오늘 나의 패션을
+            자랑하는 <span className="font-semibold">#OOTD</span> (Outfit Of The
+            Day) , 그리고 패션에 대한 고민을 해결해줄 투표기능이 있는{" "}
+            <span className="font-semibold">뭘 입을까?</span> 가 있습니다.
+            <br />
+            <br />
+            여러 커뮤니티와 쇼핑몰 어플들을 이용하면서 옷에 대한 센스가 부족한
+            사람들은 어디서 도움을 받을 수 있을까 생각하다가 만들게 된 'Hunsu'
+            입니다. <br />
+            <br />
+            초반 백엔드와 소통의 어려움을 Figma와 구글시트를 사용해 UI/UX 및 API
+            명세를 문서화하여 해결하였습니다. 이를 통해 문서화의 중요성과{" "}
+            <span className="font-semibold">백엔드 개발자와 협업하는 방법</span>
+            도 배울 수 있었습니다.
+            <br />
+            <br />
+            뿐만 아니라, Vuex를 사용할 때 반복되는 코드를 줄이기 위해 파일을
+            따로 생성해서 Import하여 사용하는 등 혼자 공부했을 때는 몰랐던
+            여러가지 코드 작성법들을 배울 수 있었습니다.
+            <br />
+            <br />
+            <hr />
+            <br />
+          </p>
           {hunsuDesc.map((desc, index) => (
             <div className="grid grid-cols-3" key={index}>
               <div className="col-span-1 flex items-center font-semibold gap-x-2">
@@ -85,7 +90,13 @@ const Hunsu = () => {
               <p>GitHub</p>
             </div>
             <div className="col-span-2 underline hover:text-gray-500 flex items-center">
-              <a href="https://github.com/gnyonge/Hunsu">바로가기</a>
+              <a
+                href="https://github.com/gnyonge/Hunsu"
+                target="_blank"
+                rel="noreferrer"
+              >
+                바로가기
+              </a>
             </div>
           </div>
         </div>
