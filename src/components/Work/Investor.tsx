@@ -39,7 +39,7 @@ const Investor = () => {
             ))}
           </Slider>
         </div>
-        <div className="w-full text-start mt-12 border-t pt-4 grid grid-cols-2 gap-x-2">
+        <div className="w-full text-start mt-12 border-t pt-4 grid grid-cols-1 lg:grid-cols-2 gap-x-2">
           <div>
             <div className="flex gap-x-1 font-semibold mb-2">
               <FcCheckmark size="24" />
@@ -58,7 +58,7 @@ const Investor = () => {
               </li>
               <li className="mb-4">
                 <p>
-                  해당 사이트는 일반 투자자들이 가상 자산 운용 전문가들이 만든
+                  해당 프로젝트는 일반 투자자들이 가상 자산 운용 전문가들이 만든
                   상품들을{" "}
                   <span className="font-semibold">
                     구매(투자), 판매(투자 취소){" "}
@@ -90,10 +90,13 @@ const Investor = () => {
                 <p>기존 프로젝트 UI/UX 리뉴얼 프론트 개발</p>
               </li>
               <li className="mb-2">
-                <p>React, ES6, TailwindCSS를 활용한 UI 개발</p>
+                <p>React, Typescript, TailwindCSS를 활용한 UI 개발</p>
               </li>
               <li className="mb-2">
-                <p>Recoil를 이용한 상태관리</p>
+                <p>로그인, 마이페이지, 가상 자산 지갑 입출금 기능 개발</p>
+              </li>
+              <li className="mb-2">
+                <p>i18n을 이용한 다국어 지원</p>
               </li>
               <li className="mb-4">
                 <p>공통 UI 컴포넌트 라이브러리 개발</p>
