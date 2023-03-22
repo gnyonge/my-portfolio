@@ -1,10 +1,7 @@
 import { Fade } from "react-awesome-reveal";
 import Admin from "./Admin";
-import Hunsu from "./Hunsu";
 import Investor from "./Investor";
-import Pokemon from "./Pokemon";
 import Terminal from "./Terminal";
-import WalkieDoggie from "./WalkieDoggie";
 
 export const SETTINGS = {
   dots: true,
@@ -25,9 +22,6 @@ const Work = () => {
           <Investor />
           <Admin />
           <Terminal />
-          <Pokemon />
-          <WalkieDoggie />
-          <Hunsu />
         </div>
       </div>
     </div>
