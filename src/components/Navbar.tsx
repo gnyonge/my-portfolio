@@ -30,19 +30,19 @@ const Navbar = () => {
 
   return (
     <div
-      className={`flex items-center justify-between h-16 px-12 fixed top-0 left-0 right-0 ${
+      className={`flex items-center justify-between h-16 px-4 md:px-12 fixed top-0 left-0 right-0 ${
         isFixed
           ? "bg-white shadow-lg z-10 duration-250 transition-all ease-in-out"
           : ""
       }`}
     >
-      <p className="font-semibold text-lg">Portfolio.</p>
+      <p className="font-semibold text-sm md:text-lg">Portfolio.</p>
       <div>
         {MENUS.map(({ title, href }) => (
           <a
             key={title}
             href={href}
-            className="px-3 text-sm transition-all ease-in-out bg-transparent opacity-60 hover:opacity-100 active:text-black"
+            className="pl-6 text-xs md:text-sm transition-all ease-in-out bg-transparent opacity-60 hover:opacity-100 active:text-black"
           >
             {title}
           </a>

@@ -4,8 +4,10 @@ import { FcCheckmark } from "react-icons/fc";
 const Admin = () => {
   return (
     <div className="flex flex-col items-center bg-white shadow-lg rounded-3xl p-8">
-      <p className="text-4xl font-semibold">Coinvestor Operation Admin</p>
-      <p className="text-gray-400 font-medium mt-6 mb-12">
+      <p className="text-xl md:text-4xl font-semibold">
+        Coinvestor Operation Admin
+      </p>
+      <p className="text-gray-400 text-sm md:text-base font-medium mt-6 mb-12">
         2022.06.01~ 2022.10.31
       </p>
       <div className="grid place-items-center">
@@ -14,11 +16,13 @@ const Admin = () => {
         </div>
         <div className="w-full text-start mt-12 border-t pt-4 grid grid-cols-1 lg:grid-cols-2 gap-x-2">
           <div>
-            <div className="flex gap-x-1 font-semibold mb-2">
-              <FcCheckmark size="24" />
+            <div className="flex gap-x-1 text-sm md:text-base font-semibold mb-2 items-center">
+              <div className="w-6 h-6">
+                <FcCheckmark size="24" />
+              </div>
               <p>프로젝트 소개</p>
             </div>
-            <ul className="pl-7 list-disc marker:text-xs text-sm">
+            <ul className="pl-7 list-disc marker:text-xs text-xs md:text-sm">
               <li className="mb-4">
                 <p>
                   사내 직원들이 가상 자산 운용 전문가들에게 페이백을 정산해주고
@@ -27,22 +31,26 @@ const Admin = () => {
                 </p>
               </li>
             </ul>
-            <div className="flex gap-x-1 font-semibold mb-2">
-              <FcCheckmark size="24" />
+            <div className="flex gap-x-1 text-sm md:text-base font-semibold mb-2">
+              <div className="w-6 h-6">
+                <FcCheckmark size="24" />
+              </div>
               <p>Language / Framework / Library</p>
             </div>
-            <ul className="pl-7 list-disc marker:text-xs text-sm">
+            <ul className="pl-7 list-disc marker:text-xs text-xs md:text-sm">
               <li className="mb-4">
                 <p>Typescript, React, Zustand, TailwindCSS</p>
               </li>
             </ul>
           </div>
           <div>
-            <div className="flex gap-x-1 font-semibold mb-2">
-              <FcCheckmark size="24" />
+            <div className="flex gap-x-1 text-sm md:text-base font-semibold mb-2 items-center">
+              <div className="w-6 h-6">
+                <FcCheckmark size="24" />
+              </div>
               <p>담당 업무</p>
             </div>
-            <ul className="pl-7 list-disc marker:text-xs text-sm">
+            <ul className="pl-7 list-disc marker:text-xs text-xs md:text-sm">
               <li className="mb-2">
                 <p>React, Typescript, TailwindCSS를 활용한 UI 개발</p>
               </li>

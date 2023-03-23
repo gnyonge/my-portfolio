@@ -12,8 +12,10 @@ const Terminal = () => {
 
   return (
     <div className="flex flex-col items-center bg-white shadow-lg rounded-3xl p-8">
-      <p className="text-4xl font-semibold">Coinvestor Trading Terminal</p>
-      <p className="text-gray-400 font-medium mt-6 mb-12">
+      <p className="text-xl md:text-4xl font-semibold">
+        Coinvestor Trading Terminal
+      </p>
+      <p className="text-gray-400 text-sm md:text-base font-medium mt-6 mb-12">
         2022.02.23 ~ 2022.05.31
       </p>
       <div className="grid place-items-center">
@@ -28,11 +30,13 @@ const Terminal = () => {
         </div>
         <div className="w-full text-start mt-12 border-t pt-4 grid grid-cols-1 lg:grid-cols-2 gap-x-2">
           <div>
-            <div className="flex gap-x-1 font-semibold mb-2">
-              <FcCheckmark size="24" />
+            <div className="flex gap-x-1 text-sm md:text-base font-semibold mb-2 items-center">
+              <div className="w-6 h-6">
+                <FcCheckmark size="24" />
+              </div>
               <p>프로젝트 소개</p>
             </div>
-            <ul className="pl-7 list-disc marker:text-xs text-sm">
+            <ul className="pl-7 list-disc marker:text-xs text-xs md:text-sm">
               <li className="mb-4">
                 <p>
                   실제 투자 상품을 운용하는 전문 Trader가 가상 자산을 실제로
@@ -40,11 +44,13 @@ const Terminal = () => {
                 </p>
               </li>
             </ul>
-            <div className="flex gap-x-1 font-semibold mb-2">
-              <FcCheckmark size="24" />
+            <div className="flex gap-x-1 text-sm md:text-base font-semibold mb-2">
+              <div className="w-6 h-6">
+                <FcCheckmark size="24" />
+              </div>
               <p>Language / Framework / Library</p>
             </div>
-            <ul className="pl-7 list-disc marker:text-xs text-sm">
+            <ul className="pl-7 list-disc marker:text-xs text-xs md:text-sm">
               <li className="mb-4">
                 <p>
                   React, SWR, Redux, React-bootstrap, Trading view(crypto chart)
@@ -53,11 +59,13 @@ const Terminal = () => {
             </ul>
           </div>
           <div>
-            <div className="flex gap-x-1 font-semibold mb-2">
-              <FcCheckmark size="24" />
+            <div className="flex gap-x-1 text-sm md:text-base font-semibold mb-2 items-center">
+              <div className="w-6 h-6">
+                <FcCheckmark size="24" />
+              </div>
               <p>담당 업무</p>
             </div>
-            <ul className="pl-7 list-disc marker:text-xs text-sm">
+            <ul className="pl-7 list-disc marker:text-xs text-xs md:text-sm">
               <li className="mb-2">
                 <p>데스크탑, 태블릿, 모바일 반응형</p>
               </li>

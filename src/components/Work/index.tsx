@@ -13,9 +13,14 @@ export const SETTINGS = {
 
 const Work = () => {
   return (
-    <div className="py-16 bg-orange-100 flex flex-col items-center" id="work">
+    <div
+      className="py-16 scroll-m-16 bg-orange-100 flex flex-col items-center"
+      id="work"
+    >
       <Fade cascade>
-        <p className="text-5xl font-semibold text-start mb-16">Work</p>
+        <p className="text-2xl md:text-5xl font-semibold text-start mb-16">
+          Work
+        </p>
       </Fade>
       <div className="grid grid-cols-12 gap-x-6">
         <div className="col-start-3 col-span-8 grid gap-y-24">

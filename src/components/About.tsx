@@ -50,15 +50,20 @@ const MY_INFO = [
 
 const About = () => {
   return (
-    <div className="py-16" id="about">
+    <div className="py-16 scroll-m-16" id="about">
       <div className="grid grid-cols-12 gap-x-6">
         <div className="col-start-3 col-span-8 lg:col-start-3 lg:col-span-4">
           <Fade cascade>
-            <p className="text-5xl font-semibold text-start mb-12">About Me</p>
+            <p className="text-2xl md:text-5xl font-semibold text-start mb-6 md:mb-12">
+              About Me
+            </p>
           </Fade>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-4">
             {MY_INFO.slice(0, 4).map(({ title, icon }) => (
-              <div className="flex gap-x-2 items-center text-sm">
+              <div
+                key={title}
+                className="flex gap-x-2 items-center text-xs md:text-sm"
+              >
                 <div className="w-7 h-7">{icon}</div>
                 <p>{title}</p>
               </div>
@@ -66,7 +71,10 @@ const About = () => {
           </div>
           <div className="grid gap-y-4 mt-4">
             {MY_INFO.slice(4, 8).map(({ title, icon }) => (
-              <div className="flex gap-x-2 items-center text-sm">
+              <div
+                key={title}
+                className="flex gap-x-2 items-center text-xs md:text-sm"
+              >
                 <div className="w-7 h-7">{icon}</div>
                 <p>{title}</p>
               </div>

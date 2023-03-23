@@ -27,8 +27,12 @@ const Investor = () => {
 
   return (
     <div className="flex flex-col items-center bg-white shadow-lg rounded-3xl p-8">
-      <p className="text-4xl font-semibold">Coinvestor Main Product</p>
-      <p className="text-gray-400 font-medium mt-6 mb-12">2022.11.01 ~ 현재</p>
+      <p className="text-xl md:text-4xl font-semibold">
+        Coinvestor Main Product
+      </p>
+      <p className="text-gray-400 font-medium text-sm md:text-base mt-6 mb-12">
+        2022.11.01 ~ 현재
+      </p>
       <div className="grid place-items-center">
         <div className="poke-carousel">
           <Slider {...SETTINGS}>
@@ -41,11 +45,13 @@ const Investor = () => {
         </div>
         <div className="w-full text-start mt-12 border-t pt-4 grid grid-cols-1 lg:grid-cols-2 gap-x-2">
           <div>
-            <div className="flex gap-x-1 font-semibold mb-2">
-              <FcCheckmark size="24" />
+            <div className="flex gap-x-1 text-sm md:text-base font-semibold mb-2 items-center">
+              <div className="w-6 h-6">
+                <FcCheckmark size="24" />
+              </div>
               <p>프로젝트 소개</p>
             </div>
-            <ul className="pl-7 list-disc marker:text-xs text-sm">
+            <ul className="pl-7 list-disc marker:text-xs text-xs md:text-sm">
               <li className="mb-2">
                 <p>
                   Coinvestor는 가상 자산에 직접 투자를 하기에 부담스러운 일반
@@ -67,11 +73,13 @@ const Investor = () => {
                 </p>
               </li>
             </ul>
-            <div className="flex gap-x-1 font-semibold mb-2">
-              <FcCheckmark size="24" />
+            <div className="flex gap-x-1 text-sm md:text-base font-semibold mb-2">
+              <div className="w-6 h-6">
+                <FcCheckmark size="24" />
+              </div>
               <p>Language / Framework / Library</p>
             </div>
-            <ul className="pl-7 list-disc marker:text-xs text-sm">
+            <ul className="pl-7 list-disc marker:text-xs text-xs md:text-sm">
               <li className="mb-4">
                 <p>
                   Typescript, React, React-query, Next.js, Recoil, TailwindCSS,
@@ -81,11 +89,13 @@ const Investor = () => {
             </ul>
           </div>
           <div>
-            <div className="flex gap-x-1 font-semibold mb-2">
-              <FcCheckmark size="24" />
+            <div className="flex gap-x-1 text-sm md:text-base font-semibold mb-2 items-center">
+              <div className="w-6 h-6">
+                <FcCheckmark size="24" />
+              </div>
               <p>담당 업무</p>
             </div>
-            <ul className="pl-7 list-disc marker:text-xs text-sm">
+            <ul className="pl-7 list-disc marker:text-xs text-xs md:text-sm">
               <li className="mb-2">
                 <p>기존 프로젝트 UI/UX 리뉴얼 프론트 개발</p>
               </li>
@@ -104,11 +114,13 @@ const Investor = () => {
             </ul>
             {InvestorDesc.map((desc, index) => (
               <div key={index}>
-                <div className="flex mb-2 font-semibold gap-x-1">
-                  <FcCheckmark size="24" />
+                <div className="flex mb-2 text-sm md:text-base font-semibold gap-x-1 items-center">
+                  <div className="w-6 h-6">
+                    <FcCheckmark size="24" />
+                  </div>
                   <p>{desc.title}</p>
                 </div>
-                <div className="underline hover:text-gray-500 flex items-center text-sm ml-7">
+                <div className="underline hover:text-gray-500 flex items-center text-xs md:text-sm ml-7">
                   <a href={desc.url} target="_blank" rel="noreferrer">
                     {desc.content} 바로가기
                   </a>
